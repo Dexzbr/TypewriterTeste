@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"></meta>
+    <title>Animação Typewriter Teste</title>
+    <style>
+        #app{
+            color: black;
+            font-size: black;
+            font-family: Arial, sans-serif;
+        }        
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+</body>
+    <script scr="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script>
+        var app = document.getElementById("app");
+
+        var typewriter = new
+        typewriter(app, {
+            loop: true});
+
+        typewriter.typeString("Teste para praticar")
+        .pauseFor(800)
+        .deleteAll()
+        .typeString("Espero que tenha gostado :D")
+        .pauseFor(800)
+        .start();
+    </script>
+</html>
